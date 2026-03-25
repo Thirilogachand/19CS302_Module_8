@@ -1,74 +1,62 @@
-# # Hackerrank problem - 2
+# # Task
 
-Your task is to take two numbers of int data type, two numbers of float data type as input and output their sum:
+# # Given a positive integer denoting , do the following:
 
-Declare 4 variables: two of type int and two of type float.
-
-Read 2 lines of input from stdin (according to the sequence given in the 'Input Format' section below) and initialize your variables.
-
-Use the + and - operator to perform the following operations:
-
-Print the sum and difference of two int variable on a new line.
-
-Print the sum and difference of two float variable rounded to one decimal place on a new line.
-
+# If  41<=n <=49 print the lowercase English word corresponding to the number (e.g., forty one for 41 , forty two for 42 etc.).
+If n>49 print Greater than 49.
 ## Input Format
 
-The first line contains two integers.
+The first line contains a single integer, .
 
-The second line contains two floating point numbers.
-
-## Constraints 
-
-1 ≤ integer variables ≤ 104
-
-1 ≤ float variables ≤ 104
+## Constraints
 
 ## Output Format
 
-Print the sum and difference of both integers separated by a space on the first line, and the sum and difference of both float (scaled to 1 decimal place) separated by a space on the second line.
+If  41<=n <=49 print the lowercase English word corresponding to the number (e.g., forty one for 4 , forty two for 42 etc.).
+If n>49 print Greater than 49.
+## Sample Input
 
-Sample Input 
+41
+## Sample Output
 
-10 4
-
-4.0 2.0
-
-Sample Output 
-
-14 6
-
-6.0 2.0
-
-Explanation
-
-When we sum the integers 10 and 4, we get the integer 14. When we subtract the second number 4 from the first number 10, we get 6 as their difference.
-
-When we sum the floating-point numbers 4.0 and 2.0, we get 6.0. When we subtract the second number 2.0 from the first number 4.0, we get 2.0 as their difference.
-
+forty one
 
 
 ## Program
 
 ```c
-#include <stdio.h>
 
+#include<stdio.h>
 int main()
 {
-    int a, b;
-    float c, d;
-    scanf("%d %d", &a, &b);
-    scanf("%f %f", &c, &d);
-    printf("%d %d\n", a + b, a - b);
-    printf("%.1f %.1f", c + d, c - d);
-    return 0;
+    int n;
+    scanf("%d",&n);
+    if(n==71)
+    printf("seventy one\n");
+    else if(n==72)
+    printf("seventy two\n");
+    else if(n==73)
+    printf("seventy three\n");
+    else if(n==74)
+    printf("seventy four\n");
+    else if(n==75)
+    printf("seventy five\n");
+    else if(n==76)
+    printf("seventy six\n");
+    else if(n==77)
+    printf("seventy seven\n");
+    else if(n==78)
+    printf("seventy eight\n");
+    else if(n==79)
+    printf("seventy nine\n");
+    else 
+    printf("Greater than 79\n");
 }
 
 ```
-
 ## Output
 
-<img width="352" height="198" alt="Screenshot 2026-03-19 191821" src="https://github.com/user-attachments/assets/4f7ad09a-2e1f-48f8-b507-25c1e039d018" />
+<img width="408" height="194" alt="Screenshot 2026-03-19 190848" src="https://github.com/user-attachments/assets/904bcf28-79ad-4af4-abca-fd85422dd174" />
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
